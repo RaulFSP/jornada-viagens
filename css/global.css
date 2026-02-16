@@ -27,4 +27,26 @@
 
 body {
   font-family: var(--font-primary);
+  color: var(--text-primary);
+}
+
+.section__title h2 {
+  font-size: 28px;
+  font-weight: var(--weight-title);
+  margin: 0;
+  text-align: center;
+}
+.section__title hr {
+  width: 180px;
+  height: 4px;
+  background-color: var(--button-secondary);
+  margin: 0 auto;
+  border: none;
+  margin: 16px auto 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .section__title h2 {
+    font-size: 32px;
+  }
 }
