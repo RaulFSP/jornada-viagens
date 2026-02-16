@@ -13,6 +13,12 @@ header {
   width: 68px;
   height: 64px;
 }
+.img__mobile {
+  display: block;
+}
+.img__desktop {
+  display: none;
+}
 .navigation__menu {
   margin-top: 6px;
 }
@@ -46,9 +52,6 @@ nav {
 }
 
 @media screen and (min-width: 768px) {
-  body {
-    background-color: red;
-  }
   .navigation__menu {
     margin-top: 0;
     width: 467px;
@@ -68,5 +71,34 @@ nav {
   }
   .navigation__menu nav {
     display: block;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header {
+    padding: 37px 85px;
+  }
+  .logo {
+    width: 260px;
+    height: 64px;
+  }
+  .img__mobile {
+    display: none;
+  }
+  .img__desktop {
+    display: block;
+  }
+  .list__link li a:hover {
+    color: var(--button-primary);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  header {
+    padding: 37px 120px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  header {
+    padding: 37px 160px;
   }
 }
