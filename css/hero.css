@@ -1,0 +1,45 @@
+.hero__img {
+  height: 400px;
+  width: 100%;
+  background: url(../img/hero-mobile.png) no-repeat no-repeat center
+    center/cover;
+  background-size: cover;
+}
+.hero h2 {
+  padding: 88px 24px;
+  margin: 0px;
+  font-weight: var(--weight-text);
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.5;
+}
+@media screen and (min-width: 768px) {
+  .hero__img {
+    height: 620px;
+    width: 100%;
+    background: url(../img/hero-tablet.png) no-repeat no-repeat center
+      center/cover;
+    background-size: cover;
+  }
+  .hero h2 {
+    padding: 88px 60px;
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero__img {
+    background: url(../img/hero-desktop.png) no-repeat no-repeat center
+      center/cover;
+  }
+  .hero h2 {
+    padding: 88px 120px;
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .hero h2 {
+    padding: 88px 160px;
+    font-size: 32px;
+  }
+}
