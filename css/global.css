@@ -35,6 +35,7 @@ body {
   font-weight: var(--weight-title);
   margin: 0;
   text-align: center;
+  padding: 0;
 }
 .section__title hr {
   width: 180px;
@@ -45,6 +46,21 @@ body {
   margin: 16px auto 32px;
 }
 
+.button {
+  width: 280px;
+  height: 64px;
+  color: var(--text-secondary);
+  font-weight: var(--weight-title);
+  font-size: 20px;
+  background-color: var(--button-secondary);
+  border-radius: 16px;
+  display: inline-block;
+  text-decoration: none;
+  line-height: 64px;
+}
+.button:hover {
+  background-color: var(--button-primary);
+}
 @media screen and (min-width: 768px) {
   .section__title h2 {
     font-size: 32px;
