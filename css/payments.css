@@ -1,0 +1,9 @@
+.payments__text__content > h3 {
+  font-size: 28px;
+  margin-bottom: 24px;
+}
+.payments__text__content > p {
+  line-height: 32px;
+  font-size: 20px;
+  font-weight: var(--weight-text);
+}

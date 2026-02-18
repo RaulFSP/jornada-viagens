@@ -9,7 +9,7 @@
 }
 .card__categoria {
   height: 220px;
-  width: 281.25px;
+  width: 312px;
   background-color: var(--background-quaternary);
   font-size: 28px;
   font-weight: var(--weight-title);
@@ -41,6 +41,12 @@
 }
 
 @media screen and (min-width: 768px) {
+  .card__categoria {
+    height: 220px;
+    width: 312px;
+  }
+}
+@media screen and (min-width: 1440px) {
   .card__categoria {
     height: 220px;
     width: 281.25px;
