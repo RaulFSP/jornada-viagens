@@ -58,6 +58,7 @@ body {
   display: inline-block;
   text-decoration: none;
   line-height: 64px;
+  text-align: center;
 }
 .button:hover {
   background-color: var(--button-primary);

@@ -1,3 +1,6 @@
+.offers {
+  width: 360px;
+}
 .card {
   color: var(--text-secondary);
   width: 312px;
@@ -55,6 +58,9 @@
 }
 
 @media screen and (min-width: 768px) {
+  .offers {
+    width: 768px;
+  }
   .offer-cards {
     flex-flow: row wrap;
     justify-content: center;
@@ -62,6 +68,10 @@
 }
 
 @media screen and (min-width: 1024px) {
+  .offers {
+    width: 1440px;
+    margin: auto;
+  }
   .card {
     width: 420px;
     height: 308px;
