@@ -63,8 +63,23 @@ body {
 .button:hover {
   background-color: var(--button-primary);
 }
+
+section {
+  width: 312px;
+  margin: 0 auto;
+}
+
 @media screen and (min-width: 768px) {
+  section {
+    width: 648px;
+  }
   .section__title h2 {
     font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  section {
+    width: 1200px;
   }
 }
