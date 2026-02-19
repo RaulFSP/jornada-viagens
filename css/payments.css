@@ -1,3 +1,30 @@
+.payment__grid {
+  display: grid;
+  grid-template-columns: 144px 144px;
+  grid-template-rows: 252px 254px 182px;
+  gap: 24px;
+  margin: 0 auto 88px;
+}
+
+.payments__text__content {
+  grid-column: span 2;
+}
+
+.payment__image--bag {
+  grid-column: 1;
+  background-image: url(../img/pagamento-mobile/bag.png);
+  background-size: cover;
+}
+.payment__image--passport {
+  grid-column: 2;
+  background-image: url(../img/pagamento-mobile/passport.png);
+  background-size: cover;
+}
+.payment__image--people {
+  grid-column: span 2;
+  background-image: url(../img/pagamento-mobile/people.png);
+  background-size: cover;
+}
 .payments__text__content > h3 {
   font-size: 28px;
   margin-bottom: 24px;
@@ -6,4 +33,51 @@
   line-height: 32px;
   font-size: 20px;
   font-weight: var(--weight-text);
+}
+@media screen and (min-width: 768px) {
+  .payment__grid {
+    grid-template-columns: 312px 312px;
+    grid-template-rows: 122px 254px 182px;
+  }
+  .payment__image--bag {
+    grid-column: 1;
+    background-image: url(../img/pagamento-tablet/bag.png);
+    background-size: cover;
+  }
+  .payment__image--passport {
+    grid-column: 2;
+    background-image: url(../img/pagamento-tablet/passport.png);
+    background-size: cover;
+  }
+  .payment__image--people {
+    grid-column: span 2;
+    background-image: url(../img/pagamento-tablet/people.png);
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .payment__grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 254px 182px;
+  }
+  .payments__text__content {
+    grid-column: 1;
+    grid-row: span 2;
+  }
+  .payment__image--bag {
+    grid-column: 2;
+    background-image: url(../img/pagamento-desktop/bag.png);
+    background-size: cover;
+  }
+  .payment__image--passport {
+    grid-column: 3;
+    background-image: url(../img/pagamento-desktop/passport.png);
+    background-size: cover;
+  }
+  .payment__image--people {
+    grid-column: span 2;
+    background-image: url(../img/pagamento-desktop/people.png);
+    background-size: cover;
+  }
 }
