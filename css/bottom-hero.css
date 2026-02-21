@@ -1,0 +1,20 @@
+.bottom__hero {
+  background-image: url(../img/bottom-hero/hero-bottom-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .bottom__hero {
+    background-image: url(../img/bottom-hero/hero-bottom-tablet.png);
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .bottom__hero {
+    background-image: url(../img/bottom-hero/hero-bottom-desktop.png);
+    height: 600px;
+  }
+}
